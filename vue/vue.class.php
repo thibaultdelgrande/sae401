@@ -42,7 +42,6 @@ class vue {
                 <a class='lien' href='index.php?action=contact'>CONTACT</a>
                 </div>";
 //    $titre = "";      // Le titre de la page est généré dans le fichierVue
-    $menu = $Conf->MENU;
 
     extract($data);   // Extrait les valeurs du tableau associatif $data dans des variables
 

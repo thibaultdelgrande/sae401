@@ -10,7 +10,6 @@
     <?= $header ?>
   </header>
   <main>
-    <h2><?= $titre ?></h2>
     <?= $contenu ?>
   </main>
   <footer>
