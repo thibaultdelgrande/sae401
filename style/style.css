@@ -73,7 +73,6 @@ h2 { font-size: 3rem; }
 
 main {
 	background-color: lightblue;
-	font-size: 2rem;
 	margin-top: 90vh;
 	position: relative;
 }
@@ -130,5 +129,25 @@ h3{
 	justify-content: center;
 }
 section{
-	margin-bottom: 8vh;
+	margin: 5vh 0 8vh 0;
+}
+.partners-display{
+	display: grid;
+	grid-template: 0px / auto auto auto auto;
+	grid-gap: 10vh 10vw;
+	padding: 10px;
+}
+.partners-display>img{
+	width: 15vw;
+	height: auto;
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+.partners-display>img:hover{
+	opacity: 1;
+}
+.parteners-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
