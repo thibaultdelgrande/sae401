@@ -14,6 +14,7 @@
   </main>
   <footer>
     <?= $footer ?>
-  </footer>  
+  </footer>
+<script src="../js/kaiserstuhl.js"></script>
 </body>
 </html>
