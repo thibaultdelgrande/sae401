@@ -75,3 +75,25 @@ main {
 	padding: 10px;
 	position: relative;
 }
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 5vw 8px 5vw;
+	background-image: url("../img/footer_background.png");
+	color: #fff;
+}
+a{
+	text-decoration: none;
+}
+.footer-right{
+	display: flex;
+	gap: 1vw;
+}
+.footer-right>a{
+	color: #ffffff;
+}
+.footer-left{
+	text-align: center;
+	font-size: 18px;
+}

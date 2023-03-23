@@ -47,7 +47,7 @@ class vue {
 
     require $this->fichierVue;   // Génère le contenu de la page en fonction de l'action
 
-    $footer = "&copy; MMI Mulhouse";
+    $footer = "<div class='footer-left'>Outdoor<br>Escape<br><span style='color: #ffae00'>At the Kaisersthul</span></div><div class='footer-right'><a href=''>About us</a><a href=''>Contact</a><a href=''>Imprint</a><a href=''>Privacy</a><a href=''>Policy Terms and Conditions</a></div>";
   
     require "gabarit.php";
   }
