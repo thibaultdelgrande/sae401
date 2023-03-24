@@ -8,17 +8,31 @@ $contenu = '<!-- The video -->
 <section>
 <div class="carousel">
   <div class="carousel-item active">
-    <img src="../img/Buch_der_7Siegel_Cover_KaiserstuhlEscape.jpg" alt="Image 1">
-  </div>
-  <div class="carousel-item">
-    <img src="../img/In-Cantata-Vinum-Escape-Abenteuer.jpg" alt="Image 2">
-  </div>
-  <div class="carousel-item">
-  <div>
+    <div class="escape-carrousel">
   <h3>In Vino Veritas</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aspernatur, consequatur cumque delectus dignissimos ea enim ipsum labore laboriosam molestiae mollitia non odit, perferendis perspiciatis quia recusandae, temporibus vel?</p>
+  <div class="info-escape-carrousel"><div class="spec-info-escape-carrousel"><img src="../img/clock.svg" alt=""><div>1h30</div></div><div class="spec-info-escape-carrousel"><img src="../img/star.svg" alt=""><div>4.8/5</div></div><div class="spec-info-escape-carrousel"><img src="../img/users.svg" alt=""><div>12 max</div></div></div>
+  <a href="" class="button">See more ...</a>
 </div>
-    <img src="../img/inVinoVeritas-Kaiserstuhl-Escape-Room-Walk.jpg" alt="Image 3">
+    <img class="img-carrousel" src="../img/Buch_der_7Siegel_Cover_KaiserstuhlEscape.jpg" alt="Image 1">
+  </div>
+  <div class="carousel-item">
+   <div class="escape-carrousel">
+  <h3>In Vino Veritas</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aspernatur, consequatur cumque delectus dignissimos ea enim ipsum labore laboriosam molestiae mollitia non odit, perferendis perspiciatis quia recusandae, temporibus vel?</p>
+  <div class="info-escape-carrousel"><div class="spec-info-escape-carrousel"><img src="../img/clock.svg" alt=""><div>1h30</div></div><div class="spec-info-escape-carrousel"><img src="../img/star.svg" alt=""><div>4.8/5</div></div><div class="spec-info-escape-carrousel"><img src="../img/users.svg" alt=""><div>12 max</div></div></div>
+  <a href="" class="button">See more ...</a>
+</div>
+    <img class="img-carrousel" src="../img/In-Cantata-Vinum-Escape-Abenteuer.jpg" alt="Image 2">
+  </div>
+  <div class="carousel-item">
+  <div class="escape-carrousel">
+    <h3>In Vino Veritas</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aspernatur, consequatur cumque delectus dignissimos ea enim ipsum labore laboriosam molestiae mollitia non odit, perferendis perspiciatis quia recusandae, temporibus vel?</p>
+  <div class="info-escape-carrousel"><div class="spec-info-escape-carrousel"><img src="../img/clock.svg" alt=""><div>1h30</div></div><div class="spec-info-escape-carrousel"><img src="../img/star.svg" alt=""><div>4.8/5</div></div><div class="spec-info-escape-carrousel"><img src="../img/users.svg" alt=""><div>12 max</div></div></div>
+  <a href="" class="button">See more ...</a>
+</div>
+    <img class="img-carrousel" src="../img/inVinoVeritas-Kaiserstuhl-Escape-Room-Walk.jpg" alt="Image 3">
   </div>
 </div>
 <div class="carousel-navigation">
