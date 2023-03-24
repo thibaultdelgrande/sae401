@@ -6,6 +6,10 @@ $contenu = '<!-- The video -->
 <div class="text-video"><h1>READY TO ESCAPE</h1><h2>Live an amazing story, beautiful and full of surprise</h2></div>
 <div class="wave" style="top: -5vh"></div>
 <section>
+<div class="carousel-navigation">
+  <button class="prev-button"><img src="../img/arrow-left.svg" alt=""></button>
+  <button class="next-button"><img src="../img/arrow-right.svg" alt=""></button>
+</div>
 <div class="carousel">
   <div class="carousel-item active">
     <div class="escape-carrousel">
@@ -18,7 +22,7 @@ $contenu = '<!-- The video -->
   </div>
   <div class="carousel-item">
    <div class="escape-carrousel">
-  <h3>In Vino Veritas</h3>
+  <h3>In Cantata Vinum Escape Abenteuer</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aspernatur, consequatur cumque delectus dignissimos ea enim ipsum labore laboriosam molestiae mollitia non odit, perferendis perspiciatis quia recusandae, temporibus vel?</p>
   <div class="info-escape-carrousel"><div class="spec-info-escape-carrousel"><img src="../img/clock.svg" alt=""><div>1h30</div></div><div class="spec-info-escape-carrousel"><img src="../img/star.svg" alt=""><div>4.8/5</div></div><div class="spec-info-escape-carrousel"><img src="../img/users.svg" alt=""><div>12 max</div></div></div>
   <a href="" class="button">See more ...</a>
@@ -34,10 +38,6 @@ $contenu = '<!-- The video -->
 </div>
     <img class="img-carrousel" src="../img/inVinoVeritas-Kaiserstuhl-Escape-Room-Walk.jpg" alt="Image 3">
   </div>
-</div>
-<div class="carousel-navigation">
-  <button class="prev-button">Prev</button>
-  <button class="next-button">Next</button>
 </div>
 
 </section>

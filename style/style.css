@@ -168,6 +168,7 @@ section{
 }
 
 .carousel-item {
+	display: flex;
 	justify-content: space-evenly;
 	position: absolute;
 	align-items: center;
@@ -191,21 +192,18 @@ section{
 
 .carousel-navigation {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 2vw;
+	padding-left: 30vw;
 	margin-top: 10px;
 }
 
 .carousel-navigation button {
-	padding: 10px 20px;
-	background-color: #ccc;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 }
 
-.carousel-navigation button:hover {
-	background-color: #aaa;
-}
 .escape-carrousel{
 	max-width: 35vw;
 	display: flex;
@@ -226,4 +224,6 @@ section{
 	padding: 5px 15px;
 	border-radius: 20px;
 	width: fit-content;
+	text-decoration: none;
+	color: #fff;
 }
