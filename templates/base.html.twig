@@ -15,9 +15,14 @@
         {% endblock %}
     </head>
     <body>
-    {% include '_header.html.twig' %}
+        {% block header %}
+            {% include '_header.html.twig' %}
+        {% endblock %}
+    
         {% block body %}{% endblock %}
-    {% include '_footer.html.twig' %}
+        {% block footer %}
+                    {% include '_footer.html.twig' %}
+        {% endblock %}
     </body>
     <script src="js/kaiserstuhl.js"></script>
 </html>
