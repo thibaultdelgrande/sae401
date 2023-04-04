@@ -27,7 +27,7 @@
                             <a href="#"><h3>{{ escapeGame.titre }}</h3></a>
                             <div>
 
-                            <a href="#" class="btn btn-warning">Edit</a>
+                            <a href="{{ path('app_edition_escape_game', {'id': escapeGame.id})}}" class="btn btn-warning">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
                             </div>
                         </li>

@@ -2,23 +2,24 @@
 
 namespace App\Controller;
 
-use App\Repository\EscapeGameRepository;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Repository\EscapeGameRepository;
 
 class AdminPannelController extends AbstractController
 {
     #[Route('/admin', name: 'app_admin_pannel')]
     public function index(EscapeGameRepository $escapeGameRepository): Response
     {
-        $escapeGames = $escapeGameRepository->findAll();
         if (!$this->getUser()) {
             return $this->redirectToRoute('app_backoffice_login');
         }
+
+        $escapeGames = $escapeGameRepository->findAll();
         return $this->render('admin_pannel/index.html.twig', [
             'controller_name' => 'AdminPannelController',
-            'escapeGames' => $escapeGames
+            'escapeGames' => $escapeGames,
         ]);
     }
 }
