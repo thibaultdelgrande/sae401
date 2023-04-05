@@ -14,9 +14,7 @@ class BackofficeLoginController extends AbstractController
     public function login(AuthenticationUtils $authenticationUtils, Request $request): Response
     {
 
-        if ($this->getUser()) {
-            return $this->redirectToRoute('app_admin_pannel');
-        }
+
         return $this->render('backoffice_login/index.html.twig', [
             'controller_name' => 'BackofficeLoginController',
             'last_username' => $authenticationUtils->getLastUsername(),

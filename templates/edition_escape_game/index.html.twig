@@ -13,7 +13,11 @@
 
 {% block body %}
     <div class="container">
-        <h1>Edit {{ escapeGame.titre}}</h1>
+        {% if escapeGame.id == null %}
+            <h1>Create an escape game</h1>
+        {% else %}
+            <h1>Edit - {{ escapeGame.titre}}</h1>
+        {% endif %}
         <div class="mb-3">
             You are connected as {{ app.user.username }}
             <a href="{{ path('app_backoffice_logout') }}">Logout</a>

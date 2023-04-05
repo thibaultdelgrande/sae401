@@ -3,23 +3,23 @@
 namespace App\Controller;
 
 use App\Form\EscapeGameType;
-use App\Repository\EscapeGameRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\EscapeGame;
 
-class EditionEscapeGameController extends AbstractController
+class CreateEscapeGameController extends AbstractController
 {
-    #[Route('/{id}/edit', name: 'app_edition_escape_game', methods: ['GET', 'POST'])]
-    public function index($id, EscapeGameRepository $escapeGameRepository, Request $request, EntityManagerInterface $manager): Response
+    #[Route('/new', name: 'app_create_escape_game', methods: ['GET', 'POST'])]
+    public function index( Request $request, EntityManagerInterface $manager): Response
     {
         if (!$this->getUser()) {
             return $this->redirectToRoute('app_backoffice_login');
         }
 
-        $escapeGame = $escapeGameRepository->findOneBy(['id' => $id]);
+        $escapeGame = New EscapeGame();
         $form = $this->createForm(EscapeGameType::class, $escapeGame);
 
         $form->handleRequest($request);
@@ -32,6 +32,7 @@ class EditionEscapeGameController extends AbstractController
 
             return $this->redirectToRoute('app_admin_pannel');  
         }
+
 
         return $this->render('edition_escape_game/index.html.twig', [
             'controller_name' => 'EditionEscapeGameController',
