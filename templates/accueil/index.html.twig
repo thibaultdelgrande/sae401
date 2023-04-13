@@ -35,7 +35,7 @@
                         <div>{{ escapeGame.nombreJoueursMax }}</div>
                         </div>
                         </div>
-                        <a href="{{ path('app_adventure') }}" class="button">{{ 'see_more'|trans }}</a>
+                        <a href="{{ path('app_adventure', {'lang': app.request.get('lang')}) }}" class="button">{{ 'see_more'|trans }}</a>
                     </div>
                     <img class="img-carrousel" src="{{ escapeGame.image }}" alt="Image 1">
                 </div>
@@ -72,7 +72,7 @@
         <h3 style="color: #ffae00">{{ 'gift_card'|trans }}</h3>
         <div class="global-offer"><p>{{ 'because_experience_are_better'|trans }}</p>
             <div class="offers-img"><img class="transparent" style="transform: translate(10vw)" src="/img/offer-card.JPG" alt=""><img class="front-img" src="/img/offer-card.JPG" alt=""><img class="transparent" style="transform: translate(-10vw)" src="/img/offer-card.JPG" alt=""></div>
-            <a href="{{ path('app_offers') }}" class="button">{{ 'see_more'|trans }}</a>
+            <a href="{{ path('app_offers', {'lang': app.request.get('lang')}) }}" class="button">{{ 'see_more'|trans }}</a>
         </div>
     </section>
     <div class="wave"></div>
