@@ -1,31 +1,30 @@
-console.log("test");
-const carouselItems = document.querySelectorAll('.carousel-item');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-let currentIndex = 0;
+console.log("select");
+let i=0
 
-function showItem(index) {
-    carouselItems.forEach(item => item.classList.remove('active'));
-    carouselItems[index].classList.add('active');
-}
-
-function nextItem() {
-    currentIndex++;
-    if (currentIndex >= carouselItems.length) {
-        currentIndex = 0;
+function Escapedesc(){
+    const event = document.querySelectorAll(".escape-individual").forEach(el => {
+        el.classList.remove("selec");
+    });
+    if (i>0){
+        document.querySelector(".mask[data-id=\""+esc+"\"]").classList.remove("show");
     }
-    showItem(currentIndex);
+    var select = this.dataset.id;
+    console.log(select);
+    this.classList.add("selec");
+    document.querySelector(".mask[data-id=\""+select+"\"]").classList.add("show");
+    i++;
+    esc= select;
+    console.log(i);
+
 }
 
-function prevItem() {
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = carouselItems.length - 1;
-    }
-    showItem(currentIndex);
-}
+const event = document.querySelectorAll(".escape-individual").forEach(el => {
+    el.addEventListener("click", Escapedesc);
+});
 
-nextButton.addEventListener('click', nextItem);
-prevButton.addEventListener('click', prevItem);
-
-showItem(currentIndex);
+var map = L.map('map').setView([48.037310786182196, 7.642389084893441], 13);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var marker = L.marker([48.037310786182196, 7.642389084893441]).addTo(map);

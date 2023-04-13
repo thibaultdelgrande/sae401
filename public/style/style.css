@@ -86,7 +86,7 @@ h1 {
     }
 }
 main{
-    background-color: #eee;
+    background-color: #eeeec9;
 }
 .home {
     margin-top: 90vh;
@@ -292,4 +292,94 @@ section {
 	gap: 2vh;
     flex-direction: column;
     align-items: center;
+}
+
+.show-escape{
+    display: flex;
+    gap: 8vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.escape-individual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-items: center;
+    grid-auto-flow: column;
+}
+.escape-individual>img{
+    width: 20vw;
+    opacity: 40%;
+    transition-duration: 0.6s;
+}
+.escape-individual:hover img{
+    opacity: 100%;
+}
+.escape-individual>h3{
+    color: #ffae00;
+}
+.selec img{
+    opacity: 100%;
+}
+.mask{
+    display: none;
+}
+.show{
+    display: block;
+}
+.escape-precise{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 80vw;
+    gap: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.flex-spec{
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2vh;
+}
+
+#map{
+    height: 25vh;
+    width: 25vw;
+    margin-bottom: 3vh;
+}
+
+.contact-view{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.title-contact>h2{
+    color: #ffae00;
+}
+
+.faq-view{
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sts-giftcard{
+    display: flex;
 }

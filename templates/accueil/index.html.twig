@@ -6,7 +6,7 @@
     <main class="home">
     <!-- The video -->
     <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-        <source src="../img/bg_vid.mp4" type="video/mp4">
+        <source src="../img/bg_video.mp4" type="video/mp4">
     </video>
     <div class="text-video"><h1>READY TO ESCAPE</h1><h2>Live an amazing story, beautiful and full of surprise</h2></div>
     <div class="wave" style="top: -5vh"></div>
@@ -35,7 +35,7 @@
                         <div>{{ escapeGame.nombreJoueursMax }}</div>
                         </div>
                         </div>
-                        <a href="" class="button">See more ...</a>
+                        <a href="{{ path('app_adventure') }}" class="button">See more ...</a>
                     </div>
                     <img class="img-carrousel" src="{{ escapeGame.image }}" alt="Image 1">
                 </div>
@@ -72,7 +72,7 @@
         <h3 style="color: #ffae00">Our Offers</h3>
         <div class="global-offer"><p>Because experience are better than materials gifts</p>
             <div class="offers-img"><img class="transparent" style="transform: translate(10vw)" src="../img/offer-card.JPG" alt=""><img class="front-img" src="../img/offer-card.JPG" alt=""><img class="transparent" style="transform: translate(-10vw)" src="../img/offer-card.JPG" alt=""></div>
-            <a href="" class="button">See more ...</a>
+            <a href="{{ path('app_offers') }}" class="button">See more ...</a>
         </div>
     </section>
     <div class="wave"></div>
@@ -85,4 +85,6 @@
     </section>
     <div class="wave" style="top: 5vh"></div>
     </main>
+    <script src="/js/carrousel.js"></script>
+
 {% endblock %}
