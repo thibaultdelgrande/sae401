@@ -1,25 +1,17 @@
 <header>
-    <a href='{{ path('app_accueil') }}'><img src='/img/kaiserstuhl_escape_logo.png'></a>
-    <div class='header-right'>
-        <a class='lien' href='{{ path('app_adventure') }}'>OUR ADVENTURE</a>
-        <a class='lien' href='{{ path('app_offers') }}'>GIFT CARD</a>
-        <a class='lien' href='{{ path('app_faq') }}'>FAQ</a>
-        <a class='lien' href='{{ path('app_contact') }}'>CONTACT</a>
-    </div>
-    <div>
-        {% if app.request.locale != 'fr' %}
-                <a href="{{ path('app_accueil', {'lang': 'fr'}) }}">Passer en français</a>
-        {% endif %}
-
-        {% if app.request.locale != 'en' %}
-            <a href="{{ path('app_accueil', {'lang': 'en'}) }}">Switch to English</a>
-        {% endif %}
-
-        {% if app.request.locale != 'de' %}
-            <a href="{{ path('app_accueil', {'lang': 'de'}) }}">Auf Deutsch wechseln</a>
-        {% endif %}
+	<a href='{{ path('app_accueil') }}'><img src='/img/kaiserstuhl_escape_logo.png'></a>
+	<div class='header-right'>
+		<a class='lien' href='{{ path('app_adventure') }}'>OUR ADVENTURE</a>
+		<a class='lien' href='{{ path('app_offers') }}'>GIFT CARD</a>
+		<a class='lien' href='{{ path('app_faq') }}'>FAQ</a>
+		<a class='lien' href='{{ path('app_contact') }}'>CONTACT</a>
+	</div>
+	<div>
+		<a href="{{ path('app_accueil', {'lang': 'fr'}) }}">Passer en français</a>
+		<a href="{{ path('app_accueil', {'lang': 'en'}) }}">Switch to English</a>
+		<a href="{{ path('app_accueil', {'lang': 'de'}) }}">Auf Deutsch wechseln</a>
 
 
-    </div>
+	</div>
 
 </header>
