@@ -20,7 +20,8 @@ class EscapeGameFixtures extends Fixture
                         ->setDescription($faker->paragraph(3, true))
                         ->setDuree(DateTimeImmutable::createFromFormat('H:i', $faker->time('H:i', '3:00')))
                         ->setNombreJoueursMax(rand(2, 12))
-                        ->setImage('https://picsum.photos/300/200');
+                        ->setImage('https://picsum.photos/300/200')
+                        ->setPrix(rand(10, 100));
             $manager->persist($escapeGame);
 
         }
