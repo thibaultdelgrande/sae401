@@ -32,6 +32,18 @@ class EscapeGame
     #[ORM\Column]
     private ?float $prix = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $titreFR = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $titreDE = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $descriptionFR = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $descriptionDE = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -105,6 +117,54 @@ class EscapeGame
     public function setPrix(float $prix): self
     {
         $this->prix = $prix;
+
+        return $this;
+    }
+
+    public function getTitreFR(): ?string
+    {
+        return $this->titreFR;
+    }
+
+    public function setTitreFR(string $titreFR): self
+    {
+        $this->titreFR = $titreFR;
+
+        return $this;
+    }
+
+    public function getTitreDE(): ?string
+    {
+        return $this->titreDE;
+    }
+
+    public function setTitreDE(string $titreDE): self
+    {
+        $this->titreDE = $titreDE;
+
+        return $this;
+    }
+
+    public function getDescriptionFR(): ?string
+    {
+        return $this->descriptionFR;
+    }
+
+    public function setDescriptionFR(string $descriptionFR): self
+    {
+        $this->descriptionFR = $descriptionFR;
+
+        return $this;
+    }
+
+    public function getDescriptionDE(): ?string
+    {
+        return $this->descriptionDE;
+    }
+
+    public function setDescriptionDE(string $descriptionDE): self
+    {
+        $this->descriptionDE = $descriptionDE;
 
         return $this;
     }
