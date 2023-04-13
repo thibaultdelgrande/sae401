@@ -8,7 +8,7 @@
     <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
         <source src="/img/bg_video.mp4" type="video/mp4">
     </video>
-    <div class="text-video"><h1>{{ 'ready_to_escape'|trans }}</h1><h2>Live an amazing story, beautiful and full of surprise</h2></div>
+    <div class="text-video"><h1>{{ 'ready_to_escape'|trans }}</h1><h2>{{ 'live_an_amazing_story'|trans }}</h2></div>
     <div class="wave" style="top: -5vh"></div>
     <section>
         <div class="carousel-navigation">
@@ -35,7 +35,7 @@
                         <div>{{ escapeGame.nombreJoueursMax }}</div>
                         </div>
                         </div>
-                        <a href="{{ path('app_adventure') }}" class="button">See more ...</a>
+                        <a href="{{ path('app_adventure') }}" class="button">{{ 'see_more'|trans }}</a>
                     </div>
                     <img class="img-carrousel" src="{{ escapeGame.image }}" alt="Image 1">
                 </div>
@@ -45,22 +45,22 @@
     </section>
     <div class="wave"></div>
     <section>
-        <h3 style="color: #ffae00">Users feedback</h3>
+        <h3 style="color: #ffae00">{{ 'users_feedback'|trans }}</h3>
         <div class="feedback-block">
             <div class="feedback">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus dignissimos distinctio eos fuga id nulla perspiciatis repudiandae, sed, vitae voluptatibus voluptatum. Debitis, impedit mollitia placeat quia quo sit voluptatibus?</p>
+                <p>{{ 'feedback_one'|trans }}</p>
                 <hr>
                 <img class="pp" src="/img/pp_dev.png" alt="">
                 <div>Thibaut Pinot</div>
             </div>
             <div class="feedback">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus dignissimos distinctio eos fuga id nulla perspiciatis repudiandae, sed, vitae voluptatibus voluptatum. Debitis, impedit mollitia placeat quia quo sit voluptatibus?</p>
+                <p>{{ 'feedback_two'|trans }}</p>
                 <hr>
                 <img class="pp" src="/img/pp_dev.png" alt="">
                 <div>Thibaut Pinot</div>
             </div>
             <div class="feedback">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus dignissimos distinctio eos fuga id nulla perspiciatis repudiandae, sed, vitae voluptatibus voluptatum. Debitis, impedit mollitia placeat quia quo sit voluptatibus?</p>
+                <p>{{ 'feedback_three'|trans }}</p>
                 <hr>
                 <img class="pp" src="/img/pp_dev.png" alt="">
                 <div>Thibaut Pinot</div>
@@ -69,17 +69,17 @@
     </section>
     <div class="wave"></div>
     <section>
-        <h3 style="color: #ffae00">Gift Card</h3>
-        <div class="global-offer"><p>Because experience are better than materials gifts</p>
+        <h3 style="color: #ffae00">{{ 'gift_card'|trans }}</h3>
+        <div class="global-offer"><p>{{ 'because_experience_are_better'|trans }}</p>
             <div class="offers-img"><img class="transparent" style="transform: translate(10vw)" src="/img/offer-card.JPG" alt=""><img class="front-img" src="/img/offer-card.JPG" alt=""><img class="transparent" style="transform: translate(-10vw)" src="/img/offer-card.JPG" alt=""></div>
-            <a href="{{ path('app_offers') }}" class="button">See more ...</a>
+            <a href="{{ path('app_offers') }}" class="button">{{ 'see_more'|trans }}</a>
         </div>
     </section>
     <div class="wave"></div>
     <section>
-        <h3 style="color: #ffae00">Our Partners</h3>
+        <h3 style="color: #ffae00">{{ 'our_partners'|trans }}</h3>
         <div class="parteners-block">
-            <p>These companies celebrated their corporate escape adventure with us.</p>
+            <p>{{ 'these_companies_celebrated'|trans }}</p>
             <div class="partners-display"><img src="/img/Logitech_logo.png" alt=""><img src="/img/bmw_logo.png" alt=""><img src="/img/Allianz_logo.png" alt=""><img src="/img/Siemens_logo.png" alt=""><img src="/img/DHL_Logo.png" alt=""><img src="/img/Alstom_logo.png" alt=""><img src="/img/Dm_Logo.png" alt=""><img src="/img/Lufthansa_Logo.png" alt=""></div>
         </div>
     </section>
