@@ -15,7 +15,7 @@ Le but de cette SAE est de recréer un site internet pour une agence d'escape ga
 1. Installez Composer (https://getcomposer.org/download/) et le Symfony CLI (https://symfony.com/download)
 2. Téléchargez et décompressez le projet
 3. Effectuez la commande `composer install` pour installez les dépendances
-4. Créer un fichier .env.local
+4. Créez un fichier .env.local
 5. Si vous utilisez MySQL ou MariaDB, placez ce code :
 `DATABASE_URL="mysql://app:!ChangeMe!@127.0.0.1:3306/app?serverVersion=8&charset=utf8mb4"`
 Si vous utilisez SQLite, placez ce code :
