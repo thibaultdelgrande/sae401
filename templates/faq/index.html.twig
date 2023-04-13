@@ -5,8 +5,17 @@
 {% block body %}
     <main>
         <h1 style="color: #ffae00">FAQ</h1>
+        <div class="faq-view">
+            {% for faq in faqs %}
+                <h2 style="color: #ffae00">{{ faq.question }}</h2>
+                <p>{{ faq.answer }}</p>
+            {% endfor %}
+            <div class="faq-more">
+                <h3 style="color: #ffae00">In case which you don't find your answer, contact us here</h3>
+                <a href="{{ path('app_contact') }}" class="button">Click here</a>
+            </div>
+        </div>
         <div class="wave" style="top: 5vh"></div>
-        {% for faq in faqs %}
     </main>
 
 {% endblock %}
