@@ -44,6 +44,54 @@ class EscapeGameType extends AbstractType
                     ]),
                 ],
             ])
+            ->add('titreFR', TextType::class, [
+                'attr' => [
+                    'placeholder' => 'Enter the french name of the escape game',
+                    'class' => 'form-control',
+                    'minlength' => '3',
+                    'maxlength' => '50'
+                ],
+                'label' => 'Name in french',
+                'label_attr' => [
+                    'class' => 'form-label'
+                ],
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Please enter a name',
+                    ]),
+                    new Length([
+                        'min' => 3,
+                        'minMessage' => 'Your name should be at least {{ limit }} characters',
+                        // max length allowed by Symfony for security reasons
+                        'max' => 50,
+                    ]),
+                ],
+            ])
+            ->add('titreDE', TextType::class, [
+                'attr' => [
+                    'placeholder' => 'Enter the german name of the escape game',
+                    'class' => 'form-control',
+                    'minlength' => '3',
+                    'maxlength' => '50'
+                ],
+                'label' => 'Name in german',
+                'label_attr' => [
+                    'class' => 'form-label'
+                ],
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Please enter a name',
+                    ]),
+                    new Length([
+                        'min' => 3,
+                        'minMessage' => 'Your name should be at least {{ limit }} characters',
+                        // max length allowed by Symfony for security reasons
+                        'max' => 50,
+                    ]),
+                ],
+            ])
             ->add('description', TextType::class, [
                 'attr' => [
                     'placeholder' => 'Enter the description of the escape game',
@@ -52,6 +100,54 @@ class EscapeGameType extends AbstractType
                     'maxlength' => '255'
                 ],
                 'label' => 'Description',
+                'label_attr' => [
+                    'class' => 'form-label'
+                ],
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Please enter a description',
+                    ]),
+                    new Length([
+                        'min' => 3,
+                        'minMessage' => 'Your description should be at least {{ limit }} characters',
+                        // max length allowed by Symfony for security reasons
+                        'max' => 255,
+                    ]),
+                ],
+            ])
+            ->add('descriptionFR', TextType::class, [
+                'attr' => [
+                    'placeholder' => 'Enter the french description of the escape game',
+                    'class' => 'form-control',
+                    'minlength' => '3',
+                    'maxlength' => '255'
+                ],
+                'label' => 'Description in french',
+                'label_attr' => [
+                    'class' => 'form-label'
+                ],
+                'required' => true,
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Please enter a description',
+                    ]),
+                    new Length([
+                        'min' => 3,
+                        'minMessage' => 'Your description should be at least {{ limit }} characters',
+                        // max length allowed by Symfony for security reasons
+                        'max' => 255,
+                    ]),
+                ],
+            ])
+            ->add('descriptionDE', TextType::class, [
+                'attr' => [
+                    'placeholder' => 'Enter the german description of the escape game',
+                    'class' => 'form-control',
+                    'minlength' => '3',
+                    'maxlength' => '255'
+                ],
+                'label' => 'Description in german',
                 'label_attr' => [
                     'class' => 'form-label'
                 ],
