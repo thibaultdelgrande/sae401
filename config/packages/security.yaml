@@ -19,6 +19,8 @@ security:
             form_login:
                 login_path: app_backoffice_login
                 check_path: app_backoffice_login
+                default_target_path: app_admin_pannel
+
             logout:
                 path: app_backoffice_logout
 
