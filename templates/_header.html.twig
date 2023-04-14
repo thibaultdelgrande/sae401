@@ -1,17 +1,14 @@
 <header>
-	<a href='{{ path('app_accueil') }}'><img src='/img/kaiserstuhl_escape_logo.png'></a>
+	<a href='{{ path('app_accueil', {'lang': app.request.get('lang')}) }}'><img src='/img/kaiserstuhl_escape_logo.png'></a>
 	<div class='header-right'>
-		<a class='lien' href='{{ path('app_adventure') }}'>OUR ADVENTURE</a>
-		<a class='lien' href='{{ path('app_offers') }}'>GIFT CARD</a>
-		<a class='lien' href='{{ path('app_faq') }}'>FAQ</a>
-		<a class='lien' href='{{ path('app_contact') }}'>CONTACT</a>
+		<a class='lien' href='{{ path('app_adventure', {'lang': app.request.get('lang')}) }}'>{{ 'our_adventure_header'|trans }}</a>
+		<a class='lien' href='{{ path('app_offers', {'lang': app.request.get('lang')}) }}'>{{ 'gift_card_header'|trans }}</a>
+		<a class='lien' href='{{ path('app_faq', {'lang': app.request.get('lang')}) }}'>FAQ</a>
+		<a class='lien' href='{{ path('app_contact', {'lang': app.request.get('lang')}) }}'>CONTACT</a>
 	</div>
 	<div>
-		<a href="{{ path('app_accueil', {'lang': 'fr'}) }}">Passer en français</a>
-		<a href="{{ path('app_accueil', {'lang': 'en'}) }}">Switch to English</a>
-		<a href="{{ path('app_accueil', {'lang': 'de'}) }}">Auf Deutsch wechseln</a>
-
-
+		<a href="{{ path('app_accueil', {'lang': 'fr'}) }}"><img class="flag" src="/img/France_flag.png" alt=""></a>
+		<a href="{{ path('app_accueil', {'lang': 'en'}) }}"><img class="flag" src="/img/UK_flag.png" alt=""></a>
 	</div>
 
 </header>

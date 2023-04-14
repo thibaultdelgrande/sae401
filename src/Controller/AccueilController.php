@@ -19,12 +19,9 @@ class AccueilController extends AbstractController
         $locale = $request->get('lang', $request->getLocale());
         $translator->setLocale($locale);
 
-        $url = $request->getPathInfo() . '?lang=' . $locale;
-
         return $this->render('accueil/index.html.twig', [
             'controller_name' => 'AccueilController',
             'escapeGames' => $escapeGames,
-            'url' => $url,
         ]);
     }
 }

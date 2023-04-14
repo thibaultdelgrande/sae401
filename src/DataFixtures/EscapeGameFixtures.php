@@ -18,6 +18,10 @@ class EscapeGameFixtures extends Fixture
             $escapeGame = new EscapeGame();
             $escapeGame->setTitre($faker->sentence(3, true))
                         ->setDescription($faker->paragraph(3, true))
+                        ->setTitreFR($faker->sentence(3, true))
+                        ->setTitreDE($faker->sentence(3, true))
+                        ->setDescriptionFR($faker->paragraph(3, true))
+                        ->setDescriptionDE($faker->paragraph(3, true))
                         ->setDuree(DateTimeImmutable::createFromFormat('H:i', $faker->time('H:i', '3:00')))
                         ->setNombreJoueursMax(rand(2, 12))
                         ->setImage('https://picsum.photos/300/200')
