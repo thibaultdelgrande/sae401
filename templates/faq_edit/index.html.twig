@@ -29,7 +29,7 @@
             {{ form_errors(form) }}
         </div>
 
-        {% if app.request.get('lang') == "en" %}
+        {% if app.request.get('lang') == "en" or app.request.get('lang') is null %}
         
             <div class="form-group">
                 {{ form_label(form.question) }}
