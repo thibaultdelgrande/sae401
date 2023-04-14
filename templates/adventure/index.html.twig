@@ -4,7 +4,7 @@
 
 {% block body %}
     <main>
-        <h1 style="color: #ffae00">Our Escape Game</h1>
+        <h1 style="color: #ffae00">{{ 'our_escape_game'|trans }}</h1>
         <div class="show-escape">
             {% for escapeGame in escapeGames %}
                 <a class="escape-individual" data-id="{{ escapeGame.id }}" href="#precise">
@@ -34,7 +34,7 @@
                                     <div>{{ escapeGame.nombreJoueursMax }}</div>
                                 </div>
                             </div>
-                            <a href="{{ path('app_shop') }}" class="button">Book</a>
+                            <a href="{{ path('app_shop', {'lang': app.request.get('lang')}) }}" class="button">{{ 'book'|trans }}</a>
                             <p>{{ escapeGame.description }}</p>
                         </div>
                     </div>

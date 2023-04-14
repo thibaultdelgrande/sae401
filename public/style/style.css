@@ -461,3 +461,8 @@ input[type="submit"] {
     width: 100%;
     font-size: 16px;
 }
+
+.flag{
+    height: 3vh;
+    width: auto;
+}
