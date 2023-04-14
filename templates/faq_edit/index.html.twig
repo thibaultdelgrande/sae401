@@ -28,14 +28,49 @@
         <div class="form-error invalid-feedback">
             {{ form_errors(form) }}
         </div>
-        <div class="form-group">
-            {{ form_label(form.question) }}
-            {{ form_widget(form.question) }}
-        </div>
-        <div class="form-group">
-            {{ form_label(form.answer) }}
-            {{ form_widget(form.answer) }}
-        </div>
+
+        {% if app.request.get('lang') == "en" %}
+        
+            <div class="form-group">
+                {{ form_label(form.question) }}
+                {{ form_widget(form.question) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.answer) }}
+                {{ form_widget(form.answer) }}
+            </div>
+
+        {% endif %}
+
+        {% if app.request.get('lang') == "fr" %}
+                    
+            <div class="form-group">
+                {{ form_label(form.questionFR) }}
+                {{ form_widget(form.questionFR) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.answerFR) }}
+                {{ form_widget(form.answerFR) }}
+            </div>
+        {% endif %}
+
+        {% if app.request.get('lang') == "fr" %}
+                    
+            <div class="form-group">
+                {{ form_label(form.questionDE) }}
+                {{ form_widget(form.questionDE) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.answerDE) }}
+                {{ form_widget(form.answerDE) }}
+            </div>
+        {% endif %}
+
+
+        
+        
+        
+
 
         {{ form_end(form) }}
 
