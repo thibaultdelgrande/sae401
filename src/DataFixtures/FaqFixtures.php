@@ -16,6 +16,10 @@ class FaqFixtures extends Fixture
             $faq = new Faq();
             $faq->setQuestion($faker->sentence);
             $faq->setAnswer($faker->paragraph);
+            $faq->setQuestionFR($faker->sentence);
+            $faq->setQuestionDE($faker->sentence);
+            $faq->setAnswerFR($faker->paragraph);
+            $faq->setAnswerDE($faker->paragraph);
             $manager->persist($faq);
         }
         
